@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Generated with glade 3.38.2 -->
+<interface>
+  <requires lib="gtk+" version="3.24"/>
+  <object class="GtkWindow" id="window">
+    <property name="name">window</property>
+    <property name="can-focus">False</property>
+    <property name="title" translatable="yes">Calculator</property>
+    <property name="default-width">500</property>
+    <property name="default-height">300</property>
+    <child>
+      <object class="GtkFixed">
+        <property name="visible">True</property>
+        <property name="can-focus">False</property>
+        <child>
+          <object class="GtkLabel" id="title_label">
+            <property name="width-request">150</property>
+            <property name="height-request">25</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">Calculator</property>
+          </object>
+          <packing>
+            <property name="x">152</property>
+            <property name="y">20</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="input_first">
+            <property name="width-request">58</property>
+            <property name="height-request">34</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="has-focus">True</property>
+            <property name="is-focus">True</property>
+            <property name="can-default">True</property>
+            <property name="max-length">5</property>
+            <property name="width-chars">5</property>
+            <property name="input-purpose">number</property>
+          </object>
+          <packing>
+            <property name="x">29</property>
+            <property name="y">69</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_sum">
+            <property name="width-request">50</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">+</property>
+            <property name="width-chars">1</property>
+            <property name="max-width-chars">1</property>
+          </object>
+          <packing>
+            <property name="x">92</property>
+            <property name="y">70</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="input_second">
+            <property name="width-request">58</property>
+            <property name="height-request">34</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">5</property>
+            <property name="width-chars">5</property>
+            <property name="input-purpose">number</property>
+          </object>
+          <packing>
+            <property name="x">145</property>
+            <property name="y">69</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkLabel" id="label_equal">
+            <property name="width-request">50</property>
+            <property name="height-request">30</property>
+            <property name="visible">True</property>
+            <property name="can-focus">False</property>
+            <property name="label" translatable="yes">=</property>
+            <property name="width-chars">1</property>
+            <property name="max-width-chars">1</property>
+          </object>
+          <packing>
+            <property name="x">209</property>
+            <property name="y">71</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkEntry" id="input_result">
+            <property name="width-request">98</property>
+            <property name="height-request">34</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="max-length">10</property>
+            <property name="width-chars">10</property>
+            <property name="input-purpose">number</property>
+          </object>
+          <packing>
+            <property name="x">262</property>
+            <property name="y">71</property>
+          </packing>
+        </child>
+        <child>
+          <object class="GtkButton" id="btn_sum">
+            <property name="label" translatable="yes">Calculate</property>
+            <property name="name">btn_sum</property>
+            <property name="width-request">200</property>
+            <property name="height-request">40</property>
+            <property name="visible">True</property>
+            <property name="can-focus">True</property>
+            <property name="receives-default">True</property>
+            <signal name="clicked" handler="on_btn_sum_clicked" swapped="no"/>
+          </object>
+          <packing>
+            <property name="x">28</property>
+            <property name="y">141</property>
+          </packing>
+        </child>
+      </object>
+    </child>
+  </object>
+</interface>
